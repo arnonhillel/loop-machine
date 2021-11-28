@@ -1,0 +1,30 @@
+.grid-container {
+  padding: 10px;
+}
+.grid-item {
+  // background-color: rgba(255, 255, 255, 0.8);
+  display: block;
+  width: 95%;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  margin: 5px;
+  
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Create 2 columns and auto-place rows */
+}
+
+.unselected{
+  background-color: rgb(184, 184, 184);
+  box-shadow: 2px 5px 5px black;
+}
+
+.selected{
+  background-color: rgb(217, 218, 224);
+  box-shadow: 10px 5px 5px black;
+  border: 1px unset rgba(150, 98, 98, 0.8);
+}
