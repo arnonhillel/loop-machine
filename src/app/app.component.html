@@ -1,11 +1,29 @@
-<div class="grid">
-  <div *ngFor="let item of loopFiles">
-    <div class="grid-item" [ngClass]="item.selected ? 'unselected' : 'selected'" (click)="selectItem(item.id)">
-      {{item.name}}
+<div>
+  <div class="row">
+    <div class="column" *ngFor="let item of loopFiles" (click)="selectItem(item.id)">
+      <div class="card" [ngClass]="item.selected ? 'selected' : 'unselected'">
+        <p>
+        <p>
+        <p>
+        <h3>{{item.name}}</h3>
+        <p>
+        <p>
+        <p>
+      </div>
     </div>
   </div>
+  <button class="btn btn-primary bttn" (click)="playSelected()">
+    play
+  </button>
 
+  <!-- <div class="now playing" id="music">
+    <span class="bar n1"></span>
+    <span class="bar n2"></span>
+    <span class="bar n3"></span>
+    <span class="bar n4"></span>
+    <span class="bar n5"></span>
+    <span class="bar n6"></span>
+    <span class="bar n7"></span>
+    <span class="bar n8"></span>
+  </div> -->
 </div>
-<button class="btn btn-info" style="width: 100%; background-color: rgba(0, 47, 12, 1);" (click)="playSelected()">
-  play
-</button>

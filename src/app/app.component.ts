@@ -87,8 +87,6 @@ export class AppComponent implements OnInit {
     this.loopFiles.forEach(element => {
       if (element.selected) {
         element.audio.play()
-      } else {
-        element.audio.pause()
       }
     });
   }
